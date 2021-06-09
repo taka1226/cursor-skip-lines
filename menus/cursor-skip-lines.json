@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle cursor-skip-lines",
+        "command": "cursor-skip-lines:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "cursor-skip-lines",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "cursor-skip-lines:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

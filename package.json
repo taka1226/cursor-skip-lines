@@ -1,0 +1,18 @@
+{
+  "name": "cursor-skip-lines",
+  "main": "./lib/cursor-skip-lines",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "cursor-skip-lines:toggle"
+  },
+  "repository": "https://github.com/atom/cursor-skip-lines",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

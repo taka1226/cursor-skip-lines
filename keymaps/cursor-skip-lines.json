@@ -1,0 +1,5 @@
+{
+  "atom-workspace": {
+    "ctrl-alt-o": "cursor-skip-lines:toggle"
+  }
+}
