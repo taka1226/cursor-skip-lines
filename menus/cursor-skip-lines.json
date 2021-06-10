@@ -1,26 +1,34 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle cursor-skip-lines",
-        "command": "cursor-skip-lines:toggle"
-      }
-    ]
-  },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "cursor-skip-lines",
-          "submenu": [
+    "context-menu": {
+        "atom-text-editor": [
             {
-              "label": "Toggle",
-              "command": "cursor-skip-lines:toggle"
+                "label": "moveUp cursor-skip-lines",
+                "command": "cursor-skip-lines:moveUp"
+            },
+            {
+                "label": "moveDown cursor-skip-lines",
+                "command": "cursor-skip-lines:moveDown"
             }
-          ]
+        ]
+    },
+    "menu": [
+        {
+            "label": "Packages",
+            "submenu": [
+                {
+                    "label": "cursor-skip-lines",
+                    "submenu": [
+                        {
+                            "label": "moveUp",
+                            "command": "cursor-skip-lines:moveUp"
+                        },
+                        {
+                            "label": "moveDown",
+                            "command": "cursor-skip-lines:moveDown"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

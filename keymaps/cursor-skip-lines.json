@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "cursor-skip-lines:toggle"
+    "ctrl-alt-p": "cursor-skip-lines:moveUp",
+    "ctrl-alt-n": "cursor-skip-lines:moveDown"
   }
 }

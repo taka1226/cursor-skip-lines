@@ -15,7 +15,7 @@ describe('CursorSkipLines', () => {
     activationPromise = atom.packages.activatePackage('cursor-skip-lines');
   });
 
-  describe('when the cursor-skip-lines:toggle event is triggered', () => {
+  describe('when the cursor-skip-lines:moveUp event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,8 @@ describe('CursorSkipLines', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:toggle');
+      atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:moveUp');
+      atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:moveDown');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +38,8 @@ describe('CursorSkipLines', () => {
 
         let cursorSkipLinesPanel = atom.workspace.panelForItem(cursorSkipLinesElement);
         expect(cursorSkipLinesPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:toggle');
+        atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:moveUp');
+        atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:moveDown');
         expect(cursorSkipLinesPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +57,8 @@ describe('CursorSkipLines', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:toggle');
+      atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:moveUp');
+      atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:moveDown');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +68,8 @@ describe('CursorSkipLines', () => {
         // Now we can test for view visibility
         let cursorSkipLinesElement = workspaceElement.querySelector('.cursor-skip-lines');
         expect(cursorSkipLinesElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:toggle');
+        atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:moveUp');
+        atom.commands.dispatch(workspaceElement, 'cursor-skip-lines:moveDown');
         expect(cursorSkipLinesElement).not.toBeVisible();
       });
     });

@@ -6,7 +6,8 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "cursor-skip-lines:toggle"
+    "atom-workspace": "cursor-skip-lines:moveUp",
+    "atom-workspace": "cursor-skip-lines:moveDown"
   },
   "repository": "https://github.com/atom/cursor-skip-lines",
   "license": "MIT",
