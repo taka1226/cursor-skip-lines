@@ -15,7 +15,7 @@ describe('CursorSkipLines', () => {
     activationPromise = atom.packages.activatePackage('cursor-skip-lines');
   });
 
-  describe('when the cursor-skip-lines:moveUp event is triggered', () => {
+  describe('when the cursor-skip-lines:move event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created

@@ -2,14 +2,14 @@
   "name": "cursor-skip-lines",
   "main": "./lib/cursor-skip-lines",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "skip 10 lines and move cursor",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "cursor-skip-lines:moveUp",
     "atom-workspace": "cursor-skip-lines:moveDown"
   },
-  "repository": "https://github.com/atom/cursor-skip-lines",
+  "repository": "https://github.com/taka1226/cursor-skip-lines",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
